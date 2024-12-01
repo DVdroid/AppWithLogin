@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D69734CA2CFCB9F500DB1920 /* LoginModule in Frameworks */ = {isa = PBXBuildFile; productRef = D69734C92CFCB9F500DB1920 /* LoginModule */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		D69734B62CFCB9D400DB1920 /* AppWithLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppWithLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69734CA2CFCB9F500DB1920 /* LoginModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = AppWithLogin;
 			packageProductDependencies = (
+				D69734C92CFCB9F500DB1920 /* LoginModule */,
 			);
 			productName = AppWithLogin;
 			productReference = D69734B62CFCB9D400DB1920 /* AppWithLogin.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = D69734AD2CFCB9D400DB1920;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D69734C82CFCB9F500DB1920 /* XCLocalSwiftPackageReference "../LoginModule" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D69734B72CFCB9D400DB1920 /* Products */;
 			projectDirPath = "";
@@ -270,10 +279,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.va.AppWithLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Debug;
@@ -309,10 +319,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.va.AppWithLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.1;
 			};
 			name = Release;
@@ -339,6 +350,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D69734C82CFCB9F500DB1920 /* XCLocalSwiftPackageReference "../LoginModule" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../LoginModule;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D69734C92CFCB9F500DB1920 /* LoginModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = LoginModule;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D69734AE2CFCB9D400DB1920 /* Project object */;
 }
